@@ -32,6 +32,15 @@ To configure manually, add to the `accessories` section of homebridge's `config.
   ``` 
 You can find out more about the `deviceId`/`localKey` [here](https://github.com/joshstrange/eufy-robovac)
 
+#### Get Device ID & Local Key
+
+There are multiple ways to get the `deviceId`/`localKey`, but here are the steps to do so on macOS:
+
+1. Install [BlueStacks](https://www.bluestacks.com/). 
+1. Install [ADB](https://stackoverflow.com/questions/17901692/set-up-adb-on-mac-os-x) (this requires HomeBrew on macOS).
+1. Install [EufyHome 2.3.2](https://www.apkmirror.com/apk/anker/eufyhome/eufyhome-2-3-2-release/eufyhome-2-3-2-android-apk-download/) in the emulator (double click the app and it should auto install).
+1. Follow the [instructions to log the data](https://github.com/joshstrange/eufy-robovac).
+
 Eufy RoboVac will be added to Home app a fan accessory (since HomeKit does not natively support vacuums).  
 If `hideFindButton` is not supplied or set to false, a switch that performs the 'Find' function will also be added.  
 If `hideErrorSensor` is not supplied or set to false, a Motion Sensor that is active when the vacuum has an error will also be added.  
